@@ -796,7 +796,7 @@ function MANAGER.download(url)
 	return download_file(url)
 end
 function MANAGER.scriptinfo(id)
-	local url = "https://starcatcher.us/scripts/main.lua"
+	local url = "https://script.tiny-warthog-19.telebit.io"
 	if id then
 		url = url.."?info="..id
 	end
@@ -861,7 +861,7 @@ function download_file(url)
 end
 --Downloads to a location
 local function download_script(ID,location)
-	local file = download_file("https://starcatcher.us/scripts/main.lua?get="..ID)
+	local file = download_file("https://script.tiny-warthog-19.telebit.io/?get="..ID)
 	if file then
 		f=io.open(location,"w")
 		f:write(file)
@@ -1064,7 +1064,7 @@ function ui_button.downloadpressed(self)
 			--maybe do better display names later
 			local displayName
 			local function get_script(butt)
-				local script = download_file("https://starcatcher.us/scripts/main.lua?get="..butt.ID)
+				local script = download_file("https://script.tiny-warthog-19.telebit.io/?get="..butt.ID)
 				if not script then
 					MANAGER.print("oh no no download server broked cntotact aaccbb " .. but.t.text, 255, 0, 0)
 					return false
@@ -1125,7 +1125,7 @@ function ui_button.delete(self)
 	end
 end
 function ui_button.viewonline(self)
-	open_link("https://starcatcher.us/scripts?view="..self.ID)
+	open_link("https://script.tiny-warthog-19.telebit.io/?view="..self.ID)
 end
 function ui_button.scriptcheck(self)
 	local oldpath = localscripts[self.ID]["path"]
@@ -1245,7 +1245,7 @@ local function gen_buttons_online()
 		online_req:cancel()
 	end
 
-	online_req = http.get("https://starcatcher.us/scripts/main.lua")
+	online_req = http.get("https://script.tiny-warthog-19.telebit.io")
 	
 	if first_online then
 		first_online = false
