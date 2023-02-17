@@ -237,7 +237,8 @@ local function load_filenames()
 					if OS == "WIN32" or OS == "WIN64" then
 						toinsert = toinsert:gsub("/", "\\") --not actually required
 					end
-					table.insert(filenames.." (5 PowderCoins)", toinsert)
+					filenames1 = filenames.." (5 PowderCoins)"
+					table.insert(filenames1, toinsert)
 				end
 			end
 		end
