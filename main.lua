@@ -558,7 +558,7 @@ new_button = function(x,y,w,h,splitx,f,f2,text,localscript)
 					script = localscripts[self.ID]
 				end
 				if script then
-					tooltip:settooltip(script["name"].." by "..script["author"].."\n\n"..script["description"])
+					tooltip:settooltip(script["name"].." by "..script["author"].." (5 PowderCoins)\n\n"..script["description"])
 				end
 				self.drawbackground = true
 			elseif tpt.mousex >= self.x2 then
