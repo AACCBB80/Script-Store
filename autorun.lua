@@ -9,7 +9,8 @@
 --prettier, organize code
 
 --CHANGES:
---Version 3.12: Use https for all requests, online view loads async, add FILTER button to online, fix rare failure on startup if downloaded scripts list is corrupted
+--Version 3.12: Use 
+for all requests, online view loads async, add FILTER button to online, fix rare failure on startup if downloaded scripts list is corrupted
 --Version 3.11: Fix icons in 94.0, fix "view script in browser"
 --Version 3.10: Fix HTTP requests, without this update the online section may break
 --Version 3.9: Minor icon fix for latest version of jacob1's mod
@@ -861,7 +862,7 @@ function download_file(url)
 end
 --Downloads to a location
 local function download_script(ID,location)
-	local file = download_file("https://script.tiny-warthog-19.telebit.io/?get="..ID)
+	local file = download_file("https://script.tiny-warthog-19.telebit.io/"..ID)
 	if file then
 		f=io.open(location,"w")
 		f:write(file)
