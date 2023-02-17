@@ -10,7 +10,7 @@
 
 --CHANGES:
 --Version 3.12: Use 
-for all requests, online view loads async, add FILTER button to online, fix rare failure on startup if downloaded scripts list is corrupted
+--for all requests, online view loads async, add FILTER button to online, fix rare failure on startup if downloaded scripts list is corrupted
 --Version 3.11: Fix icons in 94.0, fix "view script in browser"
 --Version 3.10: Fix HTTP requests, without this update the online section may break
 --Version 3.9: Minor icon fix for latest version of jacob1's mod
