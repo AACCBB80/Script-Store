@@ -1,4 +1,4 @@
---aaccbb's Cracker64's Autorun Script Manager mod aka Script Store
+--aaccbb's script store original by cracker64
 --The autorun to end all autoruns
 --Version 3.12
 
@@ -908,7 +908,7 @@ local function step()
 		tpt.drawtext(280,88,"nono restart tpt if want delete also it will cost you more powder  coins if you delete just disable",255,50,50)
 	end
 	tpt.drawtext(55,55,"touch script then press done when done to steal from server")
-	tpt.drawtext(474,55,"Script Store v"..MANAGER.version)--479 for simple versions
+	tpt.drawtext(474,55,"Script Store v"..MANAGER.version) --479 for simple versions
 	tooltip:draw()
 
 	if online_req and online then
@@ -1065,7 +1065,7 @@ function ui_button.downloadpressed(self)
 			--maybe do better display names later
 			local displayName
 			local function get_script(butt)
-				local script = download_file("https://script.tiny-warthog-19.telebit.io/?get="..butt.ID)
+				local script = download_file("https://script.tiny-warthog-19.telebit.io/scripts/"..butt.ID)
 				if not script then
 					MANAGER.print("oh no no download server broked cntotact aaccbb " .. but.t.text, 255, 0, 0)
 					return false
