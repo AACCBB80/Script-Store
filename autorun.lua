@@ -913,7 +913,7 @@ local function step()
 
 	if online_req and online then
 		local textwidth = tpt.textwidth("oh no slow server kek loading i think...")
-		tpt.drawtext(mainwindow.checkbox.x + (mainwindow.checkbox.w - textwidth) / 2, mainwindow.checkbox.y + (mainwindow.checkbox.h - 6) / 2, "Loading ...")
+		tpt.drawtext(mainwindow.checkbox.x + (mainwindow.checkbox.w - textwidth) / 2, mainwindow.checkbox.y + (mainwindow.checkbox.h - 6) / 2, "stfu and let me load")
 	end
 end
 local function mouseclick(mousex,mousey,button,event,wheel)
